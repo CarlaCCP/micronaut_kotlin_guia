@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: nossaCasaDoCodigo
+datasources:
+  default:
+    url: ${DB_URL:`jdbc:mysql://localhost:3307/banco_kasa_do_codigo?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSl=false`}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    dialect: MYSQL
+jpa.default.properties.hibernate.hbm2ddl.auto: update
