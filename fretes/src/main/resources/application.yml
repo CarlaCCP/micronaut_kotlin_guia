@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: fretes
+grpc:
+  server:
+    health:
+      enabled: true
+
+endpoints:
+  all:
+    #port: 8085
+    sensitive: false
+  health:
+    enabled: true
+    sensitive: false #defalut false
+    details-visible: ANONYMOUS
+
